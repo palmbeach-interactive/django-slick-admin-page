@@ -1,0 +1,107 @@
+$body-bg: #ffffff
+$grey-darker: #eaeaea
+$body-font-color: #9b4dca
+
+div
+  &.image-comparsion
+    position: relative
+    font-size: 0
+    img
+      width: 100%
+      height: auto
+      -webkit-filter: grayscale(1)
+
+    .image-after
+      position: absolute
+      top: 0
+      left: 0
+      height: 100%
+      width: 50%
+      background-size: cover
+      border-right: 2px solid $body-bg
+
+    .image-before
+      &:hover
+        cursor: col-resize
+      position: relative
+      font-size: 0
+      -ms-touch-action: none
+      -webkit-touch-callout: none
+      -webkit-user-select: none
+
+      
+      
+$slider-handler-size: 48px
+$slider-handler-size-s: 40px
+
+.ba-slider
+  position: relative
+  overflow: hidden
+  margin-bottom: 40px
+
+  p
+    padding-top: 20px
+    text-transform: uppercase
+    color: $grey-darker
+
+  img
+    width: 100%
+    display: block
+    max-width: none
+  .resize
+    position: absolute
+    top: 0
+    left: 0
+    height: 100%
+    width: 50%
+    overflow: hidden
+  .handle
+    /* Thin line seperator
+    position: absolute
+    left: 50%
+    top: 0
+    bottom: 0
+    width: 2px
+    margin-left: -2px
+    background: $body-font-color
+    cursor: ew-resize
+    &:after
+      /* Big orange knob
+      position: absolute
+      top: 50%
+      width: $slider-handler-size
+      height: $slider-handler-size
+      margin: ($slider-handler-size/2)*(-1) 0 0 ($slider-handler-size/2)*(-1)
+      content: '\21d4'
+      color: white
+      font-weight: normal
+      font-size: $slider-handler-size/2
+      text-align: center
+      line-height: ($slider-handler-size)-6
+      background: $body-font-color
+      /* @orange
+      border: 2px solid $body-font-color
+      /* darken(@orange, 5%)
+      border-radius: 50%
+      transition: all 0.3s ease
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3)
+      /* lighten(@orange, 20%)
+    &.draggable:after
+      background: $body-bg
+      color: $body-font-color
+      width: $slider-handler-size-s
+      height: $slider-handler-size-s
+      margin: ($slider-handler-size-s/2)*(-1) 0 0 ($slider-handler-size-s/2)*(-1)
+      line-height:  ($slider-handler-size-s)-6
+      font-size: $slider-handler-size-s/2
+
+  //.label
+    position: absolute
+    bottom: $grid-column-gutter
+    //z-index: 2
+
+    &.after
+      left: $grid-column-gutter
+
+    &.before
+      right: $grid-column-gutter

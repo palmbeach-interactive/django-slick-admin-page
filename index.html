@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="palmbeach interactive gmbh">
+    <meta name="description"
+          content="Django Slick Admin provides a minimal, slick & clean look for your Django (>=1.9) admin interface.">
+    <title>Django Slick Admin | A slick & clean look for your Django admin interface.</title>
+    <link rel="icon" href="https://pbi.io/static/img/base/favicons/apple-touch-icon-180x180.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+    <link rel="stylesheet" href="css/milligram.css">
+    <link rel="stylesheet" href="css/screen.css">
+</head>
+<body>
+
+<main class="wrapper">
+
+    <nav class="navigation">
+        <section class="container">
+            <a class="navigation-title" href="/">
+                <svg class="img" version="1.1" viewBox="0 0 463 669">
+                    <g transform="translate(0.000000,669.000000) scale(0.100000,-0.100000)">
+                        <path d="M2303 6677c-11-13-58-89-393-627-128-206-247-397-265-425-18-27-85-135-150-240-65-104-281-451-480-770-358-575-604-970-641-1032-10-18-45-74-76-126-47-78-106-194-107-212-1-3-11-26-24-53-60-118-132-406-157-623-19-158-8-491 20-649 82-462 291-872 619-1213 192-199 387-340 646-467 335-165 638-235 1020-235 382 0 685 70 1020 235 259 127 454 268 646 467 328 341 537 751 619 1213 28 158 39 491 20 649-25 217-97 505-157 623-13 27-23 50-23 53 0 16-57 127-107 210-32 52-67 110-77 128-37 62-283 457-641 1032-199 319-415 666-480 770-65 105-132 213-150 240-18 28-137 219-265 425-354 570-393 630-400 635-4 3-12-1-17-8zm138-904c118-191 654-1050 1214-1948 148-236 271-440 273-452 2-13 8-23 11-23 14 0 72-99 125-212 92-195 146-384 171-598 116-974-526-1884-1488-2110-868-205-1779 234-2173 1046-253 522-257 1124-10 1659 45 97 108 210 126 225 4 3 9 13 13 22 3 9 126 209 273 445 734 1176 1102 1766 1213 1946 67 108 124 197 126 197 2 0 59-89 126-197zM1080 3228c-75-17-114-67-190-243-91-212-128-368-137-580-34-772 497-1451 1254-1605 77-15 112-18 143-11 155 35 212 213 106 329-32 36-62 48-181 75-223 50-392 140-552 291-115 109-178 192-242 316-101 197-136 355-128 580 3 111 10 167 30 241 30 113 80 237 107 267 11 12 20 26 20 32 0 6 8 22 17 36 26 41 27 99 3 147-54 105-142 149-250 125z"></path>
+                    </g>
+                </svg>
+                &nbsp;
+                <h1 class="title">Django Slick Admin</h1>
+            </a>
+            <ul class="navigation-list float-right">
+                <li class="navigation-item">
+                    <a class="navigation-link" href="#popover-grid" data-popover>Docs</a>
+                    <div class="popover" id="popover-grid">
+                        <ul class="popover-list">
+                            <li class="popover-item"><a class="popover-link" href="#getting-started"
+                                                        title="Getting Started">Getting Started</a></li>
+                            <li class="popover-item"><a class="popover-link" href="#typography" title="Typography">Typography</a>
+                            </li>
+                            <li class="popover-item"><a class="popover-link" href="#blockquotes" title="Blockquotes">Blockquotes</a>
+                            </li>
+                            <li class="popover-item"><a class="popover-link" href="#buttons" title="Buttons">Buttons</a>
+                            </li>
+                            <li class="popover-item"><a class="popover-link" href="#lists" title="Lists">Lists</a></li>
+                            <li class="popover-item"><a class="popover-link" href="#forms" title="Forms">Forms</a></li>
+                            <li class="popover-item"><a class="popover-link" href="#tables" title="Tables">Tables</a>
+                            </li>
+                            <li class="popover-item"><a class="popover-link" href="#grids" title="Grids">Grids</a></li>
+                            <li class="popover-item"><a class="popover-link" href="#codes" title="Codes">Codes</a></li>
+                            <li class="popover-item"><a class="popover-link" href="#utilities" title="Utilities">Utilities</a>
+                            </li>
+                            <li class="popover-item"><a class="popover-link" href="#tips" title="Tips">Tips</a></li>
+                            <li class="popover-item"><a class="popover-link" href="#browser-support"
+                                                        title="Browser Support">Browser Support</a></li>
+                            <li class="popover-item"><a class="popover-link" href="#examples"
+                                                        title="Examples">Examples</a></li>
+                            <li class="popover-item"><a class="popover-link" href="#contributing" title="Contributing">Contributing</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="navigation-item">
+                    <a class="navigation-link" href="#popover-support" data-popover>Support</a>
+                    <div class="popover" id="popover-support">
+                        <ul class="popover-list">
+                            <li class="popover-item"><a class="popover-link" target="blank"
+                                                        href="https://github.com/milligram/milligram" title="On Github">On
+                                Github</a></li>
+                            <li class="popover-item"><a class="popover-link" target="blank"
+                                                        href="https://codepen.io/milligramcss" title="On Codepen">On
+                                Codepen</a></li>
+                            <li class="popover-item"><a class="popover-link" target="blank"
+                                                        href="https://facebook.com/milligramcss" title="On Facebook">On
+                                Facebook</a></li>
+                            <li class="popover-item"><a class="popover-link" target="blank"
+                                                        href="https://twitter.com/milligramcss" title="On Twitter">On
+                                Twitter</a></li>
+                            <li class="popover-item"><a class="popover-link" target="blank"
+                                                        href="https://github.com/milligram/milligram/issues/new"
+                                                        title="Need help?">Need help?</a></li>
+                            <li class="popover-item"><a class="popover-link" target="blank"
+                                                        href="https://github.com/milligram/milligram#license"
+                                                        title="License">License</a></li>
+                            <li class="popover-item"><a class="popover-link" target="blank"
+                                                        href="https://github.com/milligram/milligram/releases"
+                                                        title="Versions">Versions</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <a href="https://github.com/palmbeach-interactive/django-slick-admin" title="Django Slick Admin on Github"
+               target="_blank">
+                <svg class="octocat" viewBox="0 0 250 250">
+                    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+                    <path class="octocat-arm"
+                          d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"></path>
+                    <path class="octocat-body"
+                          d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"></path>
+                </svg>
+            </a>
+        </section>
+    </nav>
+
+    <header class="header" id="home">
+        <section class="container">
+            <svg class="img" width="591px" height="578px" viewBox="0 0 591 578" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="icecream" fill-rule="nonzero" >
+                        <g id="Layer_3" transform="translate(22.000000, 416.000000)">
+                            <path d="M72.604,59.967 L72.604,64.24 C72.309,65.029 72.563,66.131 72.204,66.959 C70.54,80.951 58.14,93.658 43.757,96.107 C42.292,96.662 40.562,96.65 39.06,96.884 L33.558,96.884 C32.054,96.65 30.324,96.661 28.861,96.107 C13.349,93.529 0.716,79.099 0.011,64.111 L0.011,59.709 C0.503,56.779 1.128,53.736 2.325,50.936 C3.538,48.686 4.786,46.444 6.218,44.334 L10.78,38.373 C20.983,26.662 29.921,14.088 36.643,0.381 L38.495,4.17 C44.05,17.232 52.811,28.799 62.38,39.67 C63.413,41.135 64.526,42.557 65.735,43.943 C67.532,46.611 69.29,49.306 70.7,52.232 C71.663,54.709 72.268,57.377 72.604,59.967 L72.604,59.967 Z" id="path412"></path>
+                        </g>
+                        <g id="Layer_2">
+                            <path d="M429.275,460.21 L537.468,568.403 C549.572,580.507 569.194,580.507 581.297,568.403 C593.401,556.299 593.401,536.676 581.297,524.573 L473.105,416.381 L429.275,460.21 Z" id="Shape"></path>
+                            <g id="Group" transform="translate(224.000000, 224.000000)">
+                                <path d="M68.277,283.081 L77.911,292.715 C91.229,306.034 112.854,306.004 126.212,292.647 L136.738,282.121 L68.277,283.081 Z" id="Shape"></path>
+                                <polygon id="Shape" points="32.788 247.592 54.084 268.888 151.337 267.521 173.239 245.62"></polygon>
+                                <polygon id="Shape" points="3.191 212.021 0.204 215.008 18.595 233.398 187.839 231.02 209.739 209.12"></polygon>
+                                <polygon id="Shape" points="39.691 175.521 17.795 197.417 224.342 194.518 246.239 172.62"></polygon>
+                                <polygon id="Shape" points="76.194 139.018 54.292 160.92 260.84 158.019 282.743 136.116"></polygon>
+                                <path d="M90.792,124.42 L296.603,121.53 C301.156,115.071 303.215,107.399 302.776,99.847 L112.695,102.517 L90.792,124.42 Z" id="Shape"></path>
+                                <path d="M127.298,87.914 L298.673,85.507 C297.153,82.726 295.225,80.109 292.871,77.755 L279.307,64.191 L149.195,66.018 L127.298,87.914 Z" id="Shape"></path>
+                                <polygon id="Shape" points="185.694 29.517 163.797 51.415 265.108 49.992 243.817 28.701"></polygon>
+                                <polygon id="Shape" points="200.299 14.913 229.617 14.5 215.164 0.047"></polygon>
+                            </g>
+                            <path d="M44.929,44.772 C-14.429,104.13 -14.431,200.373 44.929,259.732 L60.155,274.959 L275.115,59.999 L259.889,44.772 C200.529,-14.587 104.287,-14.586 44.929,44.772 Z" id="Shape"></path>
+                            <rect id="Rectangle-path" transform="translate(150.659104, 348.497575) rotate(-45.000000) translate(-150.659104, -348.497575) " x="138.659219" y="248.499034" width="23.9997698" height="199.997082"></rect>
+                            <rect id="Rectangle-path" transform="translate(178.941057, 320.227881) rotate(-45.000000) translate(-178.941057, -320.227881) " x="166.941172" y="220.228841" width="23.9997698" height="199.998082"></rect>
+                            <rect id="Rectangle-path" transform="translate(207.226357, 291.944249) rotate(-45.000000) translate(-207.226357, -291.944249) " x="195.226472" y="191.945208" width="23.9997698" height="199.998082"></rect>
+                            <rect id="Rectangle-path" transform="translate(235.512204, 263.645762) rotate(-45.000000) translate(-235.512204, -263.645762) " x="223.512319" y="163.646221" width="23.9997698" height="199.999082"></rect>
+                            <rect id="Rectangle-path" transform="translate(263.797057, 235.360969) rotate(-45.000000) translate(-263.797057, -235.360969) " x="251.797172" y="135.361928" width="23.9997698" height="199.998082"></rect>
+                            <rect id="Rectangle-path" transform="translate(292.082664, 207.085036) rotate(-45.000000) translate(-292.082664, -207.085036) " x="280.082279" y="107.085495" width="24.0007698" height="199.999082"></rect>
+                            <rect id="Rectangle-path" transform="translate(320.366164, 178.793596) rotate(-45.000000) translate(-320.366164, -178.793596) " x="308.366279" y="78.7945552" width="23.9997698" height="199.998082"></rect>
+                            <rect id="Rectangle-path" transform="translate(348.650264, 150.510063) rotate(-45.000000) translate(-348.650264, -150.510063) " x="336.650379" y="50.5110224" width="23.9997698" height="199.998082"></rect>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+            <h1 class="title">Django Slick Admin</h1>
+            <p class="description"> A slick & clean look for your Django admin interface<br>
+                <i>
+                    <small>Currently v0.1.5</small>
+                </i></p>
+            <a class="button" href="#comparsion" title="Preview">Preview</a>
+            <a class="button button-outline" href="https://github.com/palmbeach-interactive/django-slick-admin" title="Getting Started">Github</a>
+
+        </section>
+    </header>
+
+    <section class="container" id="why"><h3 class="title">Why another Django Admin?</h3>
+        <p>
+            With Slick Admin we aim to provide a consistent, modern looking and customisable admin interface for
+            standard views and widgets of the current django admin (>=1.9).
+        </p>
+        <p>
+            Slick Admin provides you with a cosistent looking admin interface with or without using django-cms (our
+            preferred CMS) in your
+            django application. No need to install a CMS just to have similar looking interface for all your django
+            based projects.
+        </p>
+        <p>Slick Admin works completely unobtrusive and does everything via CSS. Well not everything - there are some
+            optional & tiny bits of JavaScript involved as well.
+        </p>
+        <p>
+            Slick Admin works with the standard Django admin - and comes with support for:
+        </p>
+        <ul>
+            <li><a href="https://www.django-cms.org/en/">django CMS</a></li>
+            <li><a href="https://github.com/divio/django-filer">Django Filer</a></li>
+            <li><a href="https://github.com/django-admin-tools/django-admin-tools">Django Admin Tools</a></li>
+            <li><a href="http://django-admin-tools.readthedocs.io/en/latest/dashboard.html">Django Admin Tools
+                Dashboard</a></li>
+            <li><a href="https://github.com/KristianOellegaard/django-hvad" >django-hvad</a></li>
+            <li><a href="https://github.com/django-parler/django-parler" >django-parler</a></li>
+        </ul>
+
+    </section>
+
+    <section class="container" id="comparsion">
+        <h3 class="title">Admin Comparsion</h3>
+        <p>
+            All features of the standard django admin interface are always available. Django Slick Admin focuses on a
+            seamless and unobstrusive integration of often used django apps like model language tabs, expandable inline
+            elements etc. The Dashboard is not mandatory but a helpful way to organise more complex django applications.
+        </p>
+        <div class="ba-slider">
+            <img src="img/dashboard-django-admin.png" class="image-before" alt="">
+            <div class="resize">
+                <img src="img/dashboard-slick-admin.png" alt="">
+            </div>
+            <span class="handle"></span>
+        </div>
+        <div class="ba-slider">
+            <img src="img/change-django-admin.png" class="image-before" alt="">
+            <div class="resize">
+                <img src="img/change-slick-admin.png" alt="">
+            </div>
+            <span class="handle"></span>
+        </div>
+    </section>
+
+    <section class="container" id="comparsion">
+        <h3 class="title">Easy Customisation & Branding</h3>
+        <p>Django Slick Admin can be easily adjusted to reflect your projects or your clients visual needs. </p>
+        <div class="ba-slider">
+            <img src="img/slick-standard-variant.png" class="image-before" alt="">
+            <div class="resize">
+                <img src="img/slick-color-variant.png" alt="">
+            </div>
+            <span class="handle"></span>
+        </div>
+    </section>
+
+    <section class="container" id="comparsion">
+        <h5 class="title">Support for Material Icons</h5>
+        <p>All <a href="https://material.io/icons/">Material Design Icons</a> can be used to customize your projects dashboard.</p>
+        <img src="img/material-design-icons-supported.png" />
+    </section>
+
+    <section class="container" id="installation">
+        <h3 class="title">Installation</h3>
+        <p>Using the latest version from PyPI:</p>
+        <pre class="prettyprint custom"><code class="language-bsh">pip install django-slick-admin</code></pre>
+        <p>Using this GitHub repository (latest):</p>
+        <pre class="prettyprint custom"><code class="language-bsh">pip install -e "git://github.com/palmbeach-interactive/django-slick-admin.git#egg=django-slick-admin"</code></pre>
+
+        <p>
+            More detailled instructions and help integrating django-slick admin with 3rd party apps like
+            django-admin-tools can be found on <a href="https://github.com/palmbeach-interactive/django-slick-admin">Github</a>.
+        </p>
+        <a href="https://github.com/palmbeach-interactive/django-slick-admin#installing"
+           class="button">Documentation</a>
+    </section>
+
+    <section class="container" id="contributing">
+        <h5 class="title">Contributing</h5>
+        <p>Want to contribute? Follow these <a
+                href="https://github.com/milligram/milligram/blob/master/.github/contributing.md" title="Contributing">recommendations</a>.
+        </p>
+    </section>
+
+
+
+    <footer class="footer">
+        <section class="container">
+            <p>Designed with ♥ by <a target="_blank" href="https://www.pbi.io" title="Palmbeach Interactive GmbH">Palmbeach
+                Interactive</a>.
+                Licensed under the <a target="_blank"
+                                      href="https://github.com/palmbeach-interactive/django-slick-admin/blob/master/LICENSE"
+                                      title="MIT License">MIT License</a>.</p>
+        </section>
+    </footer>
+
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://milligram.github.io/scripts/main.js"></script>
+<script src="js/image-compare.js"></script>
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+
+</body>
+</html>
